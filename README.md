@@ -1,6 +1,8 @@
 # qhash
 Create quantum operators using a global excitation number cutoff
 
+The code in this repository is based on algorithms described in the excellent paper [J. M. Zhang and R. X. Dong, European Journal of Physics 31, 591 (2010)](https://arxiv.org/abs/1102.4006)
+
 In this example, we want to simulate a system with 6 modes and keeping up to 3 total excitations. In the normal way of tensoring up individual subsystems, if we kept 3+1 states in each mode, this requires a Hilbert-space size of `4^6=4096`. Here, by instead keeping only 3 total excitations in the system we require a Hilbert-space size of only 84.  
 ```python
 from qhash import Hashing
